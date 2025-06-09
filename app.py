@@ -1,15 +1,19 @@
 import streamlit as st
 import os
 import re
-import nltk
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-nltk.download('stopwords')
+import nltk
 from nltk.corpus import stopwords
 
-STOPWORDS = set(stopwords.words('english'))
+try:
+    stopwords.words('english')
+except LookupError:
+    nltk.download('stopwords')
+
+
 
 def clean_text(text):
     if not isinstance(text, str):
