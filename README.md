@@ -3,25 +3,22 @@ An NLP-based application that analyzes resumes and classifies them into differen
 
 🚀 Features
 Preprocesses text using NLP techniques
-
 Classifies resumes into fields like Data Science, HR, Finance, etc.
-
 Provides top skills extracted from the resume
-
 Clean web interface with Streamlit
 
 🧠 Tech Stack
-Python, Pandas, NumPy
-
-NLP: NLTK, scikit-learn
-
+Python
+Pandas
+NumPy
+NLP: NLTK
+scikit-learn
 Streamlit
-
 joblib
 
 💻 How to Run
-Clone the repository:
 
+Clone the repository:
 bash
 git clone https://github.com/babneek/resume-analyzer.git
 Install dependencies:
