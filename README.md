@@ -63,12 +63,18 @@ The app will open in your browser at `http://localhost:8501`.
 ```
 resume-analyzer/
 ├── app.py
-├── model/
-│   ├── resume_model.pkl
-│   └── le_skill.pkl
 ├── data/
-│   └── updated_resume_data.csv
+│   ├── job_descriptions/
+│   └── resume/
+├── scripts/
+│   ├── __pycache__/
+│   ├── create_jds.py
+│   ├── generate_pairs.py
+│   └── preprocess.py
+├── README.md
 ├── requirements.txt
+├── sample_resume.txt
+├── utils.py
 ```
 
 ---
